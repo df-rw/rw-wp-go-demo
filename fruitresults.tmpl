@@ -1,0 +1,11 @@
+{{block "fruit-results" .}}
+    <p>{{.Message}}</p>
+
+    {{if gt (len .Results) 0}}
+        <ul>
+        {{range .Results}}
+            <li>{{.}}
+        {{end}}
+        </ul>
+    {{end}}
+{{end}}

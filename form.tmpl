@@ -1,0 +1,13 @@
+{{block "form" .}}
+    {{template "top" .}}
+    <form hx-post="/process-form" hx-target="#results">
+        <input type="text" name="search-term" placeholder="type a fruit" />
+        <input type="submit" />
+    </form>
+
+    <div id="results">
+    </div>
+
+    {{template "bottom" .}}
+{{end}}
+

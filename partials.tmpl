@@ -1,0 +1,26 @@
+{{block "nav" .}}
+    <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/form">form</a></li>
+    </ul>
+{{end}}
+
+
+{{block "top" .}}
+<!doctype html>
+
+<html>
+    <head>
+<script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        {{template "nav" .}}
+{{end}}
+
+{{block "bottom" .}}
+    </body>
+</html>
+{{end}}
